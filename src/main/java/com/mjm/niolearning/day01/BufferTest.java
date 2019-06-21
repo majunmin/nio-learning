@@ -19,7 +19,8 @@ public class BufferTest {
 
     private static void testBufferCopy() {
         /**
-         * 调用duplicate方法实际上会创建原缓存区的一个拷贝，不是深拷贝，是浅拷贝，什么意思呢，就是这两个缓存区会共享数据元素，但每个缓存区的上界、容量、位置等属性是各自独立的；
+         * 调用duplicate方法实际上会创建原缓存区的一个拷贝，不是深拷贝，是浅拷贝，
+         * 什么意思呢，就是这两个缓存区会共享数据元素，但每个缓存区的上界、容量、位置等属性是各自独立的；
          */
         CharBuffer charBuffer1 = CharBuffer.allocate(10);
         CharBuffer charBuffer2 = charBuffer1.duplicate();
